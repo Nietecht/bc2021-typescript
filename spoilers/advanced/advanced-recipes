@@ -57,7 +57,7 @@ export const recipes = [{
     },
     {
       "type": "nutrition",
-      "details": ["fibre", 0.6, "g", undefined]
+      "details": ["fibre", 0.6, "g"]
     }
   ],
   "ingredients": [

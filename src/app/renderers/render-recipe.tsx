@@ -1,5 +1,5 @@
 import { jsx } from '@infra'
-import { Recipe } from '../model/recipe'
+import { Recipe } from '../model/types'
 
 export function renderRecipes(recipes: Recipe[]) {
   return <main>

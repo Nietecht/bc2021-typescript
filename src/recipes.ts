@@ -30,12 +30,6 @@ export const recipes = [{
     {
       "name": "eggs",
       "quantity": 4
-    },
-    {
-      "name": "pees",
-      "quantity": 200,
-      "unit": "g",
-      "instruction": "frozen"
     }
   ]
 },
