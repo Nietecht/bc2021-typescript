@@ -1,0 +1,150 @@
+// @import "_custom";
+// @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+
+body {
+  background: #f9f9f9;
+}
+
+.container {
+  background: #ededed;
+  box-shadow: 0px 0px 200px #999;
+  font-family: 'Oxygen', sans-serif;
+  width: 60%;
+  margin: 5% auto;
+}
+
+.title {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  background: #455560;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 2px 2px 0 0;
+}
+
+.details {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 15px 20px;
+}
+
+.detail-value {
+  color: #455560;
+}
+
+.items {
+  background: #ededed;
+  font-family: 'Oxygen', sans-serif;
+  padding: 20px
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+ul.checkmark li:before {
+  color: #455560;
+  content:"\2713\0020";
+  font-weight: 600;
+  margin-left: -38px;
+  margin-right: 10px;
+}
+
+.checkmark li {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+.method {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  border-bottom: solid 1px #ededed;
+  padding: 20px;
+}
+
+.method li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: -38px;
+  list-style-type: none;
+}
+
+.recipe-image {
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol > li::before {
+  font-weight: bold;
+  content: counter(item) ".";
+  margin-right: 8px;
+}
+
+.nutrition-box {
+  display: inline-block;
+  padding: 0 5px 5px 0;
+}
+
+.nutrition-inner {
+  padding: 6px;
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid black;
+  text-align: center;
+  min-width: 64px;
+}
+
+.nutrition-inner > span {
+  display: block;
+  padding-bottom: 6px;
+  line-height: 1;
+}
+
+.nutrition-title {
+  font-size: 12px;
+}
+
+.nutrition-top {
+  border-bottom: 1px solid black;
+  font-size: 16px;
+}
+
+.nutrition-bottom {
+  padding-top: 6px;
+  padding-bottom: 0;
+  font-size: 16px;
+}
+
+.header-attributes > span {
+  margin-right: 5px;
+}
+.header-attributes > span::before {
+  content: "| ";
+}
+
+.footer-attributes > span {
+  display: block;
+}
+
+.footer-attributes > span::before {
+  content: "• "
+}
